@@ -8,10 +8,10 @@ import static io.everyonecodes.java.t4_ifelse.set1.exercise6.Main.isAdult;
 public class Main {
     public static void main(String[] args) {
 
-        boolean isAdult = isAdult();
+        boolean isAdult = isAdult(); // function assignment to variable
         boolean isWearingHat = isWearingAHat();
-        boolean isKnowingPassword1 = knowsSecretPassword();
-        boolean canEnterClub = isAdult && isWearingHat && isKnowingPassword1;
+        boolean isKnowingPassword = knowsSecretPassword();
+        boolean canEnterClub = isAdult && isWearingHat && isKnowingPassword;
         if (canEnterClub) {
             System.out.println("You can enter our club.");
         } else {

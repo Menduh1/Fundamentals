@@ -5,8 +5,8 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         //        Part A
-        List<Integer> money = getMoneyNumbersFromHanselsFriends();
-
+        List<Integer> money = getMoneyNumbersFromHanselsFriends(); // function  called + assigned to a list // money is plural
+        // List<Integer> maney = List.of(1,2,3,4,5)
 //        Part B
         int total = 0;
         for (int amount : money) {
@@ -22,8 +22,8 @@ public class Main {
 }    ///!!!!!!!!!!!!!!!!!!!!!!!
         /*int sum = 0;
         int i = 0;
-        while (i < sizeList) {
-            sum += getMoneyNumbersFromHanselsFriends().get(i);
+        while (i < sizeList) { // condition is true 0 < 5
+            sum += getMoneyNumbersFromHanselsFriends().get(i); // function return value : 1,2,3,4,5 -> 0 + 1 -> sum
             i++;*/
 ///!!!!!!!!!!!!!!!!!!!!!!
 /*

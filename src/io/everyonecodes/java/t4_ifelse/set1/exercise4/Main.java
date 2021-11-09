@@ -35,33 +35,3 @@ public class Main {
     }
 }
 
-        /*
-        boolean hanselAtHome = isAtHome();
-        if (hanselAtHome) {
-            if (isGrandmaUsingCableTelephone()) {
-                callWithCellPhone();
-            } else {
-                callWithCableTelephone();
-            }
-        } else {
-            callWithCellPhone();
-        }
-    }
-    public static boolean isAtHome() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Are we at home?");
-        return scanner.nextBoolean();
-    }
-    public static boolean isGrandmaUsingCableTelephone() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Grandma, are you using the cable telephone?");
-        return scanner.nextBoolean();
-    }
-    public static void callWithCellPhone() {
-        System.out.println("Calling with cell phone");
-    }
-    public static void callWithCableTelephone() {
-        System.out.println("Calling with cable telephone");
-    }
-}*/
-

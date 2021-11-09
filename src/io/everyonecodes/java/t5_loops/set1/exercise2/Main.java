@@ -8,7 +8,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Say a number between 1 and 10");
         int number = scanner.nextInt(); // initializing
-        while (number < 1 || number > 10) {
+        while (number < 1 || number > 10) { // value 1 - 10 means true
             System.out.println("Say a number between 1 and 10");
             number = scanner.nextInt(); // Called and saved !! till condition is false - actually an infinite loop till condition is false in the body
         }

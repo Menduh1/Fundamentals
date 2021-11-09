@@ -11,10 +11,3 @@ public class Main {
     }
 
 }
-     /*
-        int ageOne = 10;
-        int ageTwo = 20;
-        int ageThree = 30;
-        System.out.println("AgeOne = " + ageOne);
-        System.out.println("AgeTwo = " + ageTwo);
-        System.out.println("AgeThree = " + ageThree);*/

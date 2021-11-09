@@ -13,13 +13,3 @@ public class Main {
     }
 
 }
-   /* double weightFirstPerson = 70.0;
-        double weightSecondPerson = 80.0;
-        double heightFirstPerson = 1.80;
-        double heightSecondPerson = 1.70;
-        double bodyMassIndexFirstPerson = weightFirstPerson / (heightFirstPerson * heightSecondPerson);
-        double bodyMassIndexSecondPerson = weightSecondPerson / (heightSecondPerson * heightSecondPerson);
-
-        System.out.println("Body Mass Index (BMI)");
-        System.out.println("BMI First Person: " + bodyMassIndexFirstPerson);
-        System.out.println("BMI Second Person: " + bodyMassIndexSecondPerson);*/

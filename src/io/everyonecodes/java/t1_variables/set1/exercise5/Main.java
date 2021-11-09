@@ -11,10 +11,3 @@ public class Main {
         System.out.println("Fahrenheit: " + fahrenheit);
     }
 }
-
-/*
-        System.out.println("Enter celsius value: ");
-        Scanner scanner = new Scanner(System.in);
-        double valueCelsius = scanner.nextDouble();
-        double valueFahrenheit = ((valueCelsius * (9.0 / 5.0)) + 32);
-        System.out.println("Fahrenheit: " + valueFahrenheit);*/

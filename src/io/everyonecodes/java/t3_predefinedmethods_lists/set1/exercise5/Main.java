@@ -12,6 +12,7 @@ public class Main {
         System.out.println(cider);
     }
 
+
     public static String makeLastCapital(String word) {
         int positionOfLast = word.length() - 1;
         String last = String.valueOf(word.charAt(positionOfLast));
@@ -20,16 +21,6 @@ public class Main {
     }
 }
         /*
-        String pintEgerLastLetterCapital = makeLastCapital("pint-eger");
-        System.out.println(pintEgerLastLetterCapital);
-        String guinNesLastLetterCapital = makeLastCapital("GUI-nness");
-        System.out.println(guinNesLastLetterCapital);
-        String cyberCiderLastLetterCapital = makeLastCapital("cyber-cider");
-        System.out.println(cyberCiderLastLetterCapital);
-        System.out.println("");
-        //  System.out.println(makeLastCapital("pint-eger"));
-        //  System.out.println(makeLastCapital("GUI-nness"));
-        //  System.out.println(makeLastCapital("cyber-cider"));
 
         /* Loop -> For -Each - Loop !
         Scanner scanner = new Scanner(System.in);
@@ -41,27 +32,4 @@ public class Main {
             System.out.println(makeLastCapital(capital));
         }*/
 
-  /*  int positionOfLast = words.length()-1;
-    String last = String.valueOf(words.charAt(positionOfLast));
-    String beginning = words.substring(0,positionOfLast);
-    System.out.println(positionOfLast);
-    System.out.println(last.toUpperCase());
-    System.out.println(beginning);*/
-/*
-    }
 
-    public static String makeLastCapital(String word) {
-
-   /* int wordLength = word.length();
-    String makeLastCapitalUpperCase = word.toUpperCase().substring((wordLength - 1), (wordLength));
-    return word.substring(0, (wordLength - 1)) + makeLastCapitalUpperCase;*/
-
-   /*     int positionOfLast = word.length() - 1;
-        String last = String.valueOf(word.charAt(positionOfLast));
-        String beginning = word.substring(0, positionOfLast);
-        return beginning + last.toUpperCase();
-
-    }
-
-}
-*/

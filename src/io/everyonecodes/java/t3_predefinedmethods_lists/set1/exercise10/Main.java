@@ -19,11 +19,11 @@ public class Main {
         System.out.println(cleanDishes);
     }
 
-    public static void cleanOneDish(List<String> dirtyDishes, List<String> cleanDishes) {
-        String dish = getTop(dirtyDishes);
-        removeTop(dirtyDishes);
-        clean(dish);
-        putTop(cleanDishes, dish);
+    public static void cleanOneDish(List<String> dirtyDishes, List<String> cleanDishes) {// parameter two lists !!!
+        String dish = getTop(dirtyDishes); // function in a function - function to variable assignment // return : String dish =  plate3
+        removeTop(dirtyDishes); // no assignment -> plate 3 removed from dirtyDishes
+        clean(dish); // function call -> print : "cleaned dish:" plate 3!!
+        putTop(cleanDishes, dish);// add plate3 to cleanDishes
     }
 
     // Part C
@@ -45,39 +45,3 @@ public class Main {
         System.out.println("Cleaned dish: " + dish);
     }
     }
-        /*
-        List<String> dirtyDishes = new ArrayList<>(List.of("plate1", "plate2", "plate3"));
-
-        List<String> cleanDishes = new ArrayList<>();
-
-        cleanAndMoveDishes(dirtyDishes, cleanDishes);
-        cleanAndMoveDishes(dirtyDishes, cleanDishes);
-        cleanAndMoveDishes(dirtyDishes, cleanDishes);
-        System.out.println(cleanDishes);
-
-    }
-
-    public static void cleanAndMoveDishes(List<String> dirtyDishes, List<String> cleanDishes) {
-        String dish = getTop(dirtyDishes);
-        removeTop(dirtyDishes);
-        clean(dish);
-        putTop(cleanDishes, dish);
-    }
-
-    public static String getTop(List<String> dishes) {
-        return dishes.get(dishes.size() - 1);
-    }
-
-    public static String removeTop(List<String> dishes) {
-        return dishes.remove(dishes.size() - 1);
-    }
-
-    public static void putTop(List<String> dishes, String dish) {
-        dishes.add(dish);
-    }
-
-    public static void clean(String dish) {
-        System.out.println("Cleaned dish: " + dish);
-    }
-}*/
-

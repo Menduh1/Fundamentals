@@ -30,23 +30,23 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         for (int i = 0; i < 5; i++) {
             System.out.println("What is your word?");
-            String word = scanner.nextLine();
-            System.out.println(word + " contains " + countDistinctVowels(word) + " different vowels!");
+            String word = scanner.nextLine();//#1
+            System.out.println(word + " contains " + countDistinctVowels(word) + " different vowels!");//#6
         }
     }
 
-    public static int countDistinctVowels(String word) {
+    public static int countDistinctVowels(String word) { // #2 return int
         List<Character> vowels = List.of('a', 'e', 'i', 'o', 'u');
         int numberOfDistinctVowels = 0;
         for (Character vowel : vowels) {
-            if (containsLetter(word, vowel)) {
+            if (containsLetter(word, vowel)) {//#3 in loop and if call function #5
                 numberOfDistinctVowels++;
             }
         }
         return numberOfDistinctVowels;
     }
 
-    public static boolean containsLetter(String word, char letter) {
+    public static boolean containsLetter(String word, char letter) {//#4 return true/false
         for (int i = 0; i < word.length(); i++) {
             char currentChar = word.charAt(i);
             if (currentChar == letter) {

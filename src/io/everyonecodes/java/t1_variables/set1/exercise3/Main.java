@@ -14,15 +14,4 @@ public class Main {
         System.out.println(finalCost);
 
     }
-}        /*
-        double existingPlants = 3;
-        double buyingPlants = 10;
-        double allPlants = existingPlants + buyingPlants;
-        double existingMachines = 1;
-        double numberOfWateringMachinesToBuy = (allPlants / 4) - existingMachines;
-        double finalCost = numberOfWateringMachinesToBuy * (20 * 0.8);
-
-        System.out.println("John`s Garden System ");
-        System.out.println("All Plants : " + allPlants);
-        System.out.println("NumberOfWateringMachinesToBuy: " + numberOfWateringMachinesToBuy);
-        System.out.println("FinalCost: " + finalCost);*/
+}

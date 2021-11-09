@@ -5,11 +5,11 @@ public class Main {
 
         int totalPages = 200;
         int currentPageNumber = 1;      // initializing
-        while (currentPageNumber <= totalPages) {       // condition
-            boolean isCorrectPage = containsQuote(currentPageNumber);
-            if (isCorrectPage) {
+        while (currentPageNumber <= totalPages) {       // condition: 1 <= 200 - true //#1
+            boolean isCorrectPage = containsQuote(currentPageNumber); //#3 true = 42 ; return true
+            if (isCorrectPage) {//#4 true
                 System.out.println("Found it! It's on page " + currentPageNumber + "!");
-                break;
+                break; // exit if condition and loop !!
             }
             currentPageNumber++;    // in/de-crement
             // each iteration 1 add -> currentPageNumber = currentPageNumber;
@@ -19,7 +19,7 @@ public class Main {
         }
     }
 
-    public static boolean containsQuote(int pageNumber) {
+    public static boolean containsQuote(int pageNumber) {//#2
         // It so happens that the quote was on page 42! Go figure!
         return pageNumber == 42;
     }

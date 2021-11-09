@@ -22,7 +22,7 @@ public class Main {
         System.out.println(name + ", which bus seat do you want?");
         int seatNumber = scanner.nextInt();
         System.out.println("Ok, attempting to book the ticket...");
-        boolean success = bookBusTicket(name, seatNumber);
+        boolean success = bookBusTicket(name, seatNumber); // function call - parameters are variables - assignment to boolean
         System.out.println(success);
     }
 
@@ -32,12 +32,5 @@ public class Main {
         return random.nextBoolean();
     }
 }
-     /*    public static void buyBusTicket() { Scanner scanner = new Scanner(System.in);
-        System.out.println("What is your name?");
-        String name = scanner.nextLine();
-        System.out.println(name + ", which bus seat do you want?");
-        int seatName = scanner.nextInt();
         // System.out.println(bookBusTicket(name,seatName)); // direct call and print without variable assignment!
-        boolean bookTicketFalseTrue = bookBusTicket(name, seatName);
-        System.out.println("Ok, attempting to book the ticket... ");
-        System.out.println(bookTicketFalseTrue);}*/
+// problem is function call every time !!!!!

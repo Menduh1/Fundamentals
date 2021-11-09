@@ -13,16 +13,16 @@ public class Main {
         String operation = scanner.nextLine();
         String resultString = "Result: ";
         if (operation.equals("add")) {
-            System.out.println(resultString + addAllNumbers(number));
+            System.out.println(resultString + addAllNumbers(number)); // #1 #3
         } else if (operation.equals("multiply")) {
-            System.out.println(resultString + calculateFactorial(number));
+            System.out.println(resultString + calculateFactorial(number));//#1 #5
         } else {
             System.out.println("Unsupported operation.");
         }
     }
 
 
-    public static int addAllNumbers(int maximum) {
+    public static int addAllNumbers(int maximum) {//#2
         int start = 0;
         for (int i = 1; i <= maximum; i++) {
             start += i;
@@ -30,7 +30,7 @@ public class Main {
         return start;
     }
 
-    public static int calculateFactorial(int n) {
+    public static int calculateFactorial(int n) {//#4
         int start = 1;
         for (int i = 1; i <= n; i++) {
             start *= i;

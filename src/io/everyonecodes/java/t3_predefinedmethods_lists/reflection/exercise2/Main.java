@@ -28,12 +28,6 @@ public class Main {
 
 
 }
-        /*
-        List<String> items = new ArrayList<>();
-        items.add("egg");
-        items.add("egg");
-        items.add("bread");
-        items.add("milk");
 
       /*  //loop !
         for (int i = 0; i <= items.size(); i++) {
@@ -43,14 +37,4 @@ public class Main {
         items.add("egg");
         items.add("bread");
         System.out.println(items);*/
-
-      /*  items.remove(0);
-        items.remove(0);
-        items.remove(0);
-        items.add("egg");
-        items.add("egg");
-        items.add("bread");
-        System.out.println(items);
-    }
-}*/
 

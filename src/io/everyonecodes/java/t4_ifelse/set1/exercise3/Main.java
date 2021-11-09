@@ -15,7 +15,7 @@ public class Main {
         System.out.println("Name a picture.");
         Scanner scanner = new Scanner(System.in);
         String picture = scanner.nextLine();
-        if (!cards.contains(picture)) {
+        if (!cards.contains(picture)) {// contains for lists
             System.out.println("Oops! I don’t have it! That’s " + numberOfPoints + " points. Well played!");
         } else {
             numberOfPoints = numberOfPoints + picture.length();
@@ -27,41 +27,3 @@ public class Main {
         }
     }
 }
-
-      /*  Scanner scanner = new Scanner(System.in);
-        List<String> cards = new ArrayList<>(List.of("Screws", "Sparks", "Circuits"));
-
-        int lengthFirstElement = cards.get(0).length();
-        int lengthSecondElement = cards.get(1).length();
-        int lengthThirdElement = cards.get(2).length();
-        int currentPoints = 13;
-        //loop !
-        // while (true) {
-        System.out.println("Name a picture");
-        String nameOfPicture = scanner.nextLine();
-        //boolean picture = cards.contains(nameOfPicture);
-        //System.out.println(picture);
-       // if(nameOfPicture.equals("stop")) {
-        //    break;
-        //}
-
-        if (nameOfPicture.equals("Screws")) {
-            int sumPoints = currentPoints + lengthFirstElement;
-            System.out.println("That’s " + sumPoints + " points. I almost got you there! Well played!");
-        } else if (nameOfPicture.equals("Circuits")) {
-            int sumPoints = currentPoints + lengthThirdElement;
-            System.out.println("That’s " + sumPoints + " points. Yay! I won!");
-
-        } else if (nameOfPicture.equals("Sparks")) {
-            int sumPoints = currentPoints + lengthSecondElement;
-            System.out.println("That's " + sumPoints + " points. I almost got you there! Well played!");
-        } else {//if ((nameOfPicture.equals("exit"))) {
-
-            //System.out.println("See you!");
-            System.out.println("Oops! I don’t have it! That’s " + currentPoints + " points. Well played!");
-        }
-
-    }
-}
-
-//}*/

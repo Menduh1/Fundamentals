@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        if (!isWearingAHat() && !isBringingAPet()) {
+        if (!isWearingAHat() && !isBringingAPet()) { // false as condition - no hat no pet
             System.out.println("Welcome to our cinema, how may I assist you?");
         } else {
             System.out.println("I’m sorry, but you’re not allowed to enter.");

@@ -12,7 +12,7 @@ public class Main {
         int hanselPoints = 0;
 
         int people = 0;
-        while (people < 100) {
+        while (people < 100) {//#1
             if (isListeningToMusic()) {
                 derekPoints++;
             }
@@ -24,11 +24,11 @@ public class Main {
             }
             people++;
         }
-        System.out.println("Matilda got " + matildaPoints + "points");
+        System.out.println("Matilda got " + matildaPoints + "points");//#2
         System.out.println("Hansel got " + hanselPoints + "points");
         System.out.println("Derek got " + derekPoints + "points");
 
-        if (derekPoints > matildaPoints && derekPoints > hanselPoints) {
+        if (derekPoints > matildaPoints && derekPoints > hanselPoints) {//#3
             System.out.println("Derek wins.");
         } else if (matildaPoints > derekPoints && matildaPoints > hanselPoints) {
             System.out.println("Matilda wins.");

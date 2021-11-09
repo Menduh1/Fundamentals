@@ -3,8 +3,8 @@ package io.everyonecodes.java.t2_functions.set1.exercise4;
 public class Main {
     public static void main(String[] args) {
 
-        double cost1 = calculateTaxiCost(12);
-        double cost2 = calculateTaxiCost(7);
+        double cost1 = calculateTaxiCost(12); // assigning function to a variable ESSENTIAL !!!
+        double cost2 = calculateTaxiCost(7);// otherwise, function would be called everytime !!!
         double cost3 = calculateTaxiCost(23);
         System.out.println(cost1);
         System.out.println(cost2);
@@ -17,20 +17,8 @@ public class Main {
         return initialCost + (costPerMinute * numberOfMinutes);
     }
 }
-       /* double min = 12;
 
-        double costToPayCustomer1 = calculateTaxiCost(min);
-        System.out.println("Cost to pay customer 1 : " + costToPayCustomer1);
-
-        double costToPayCustomer2 = calculateTaxiCost(7);
-        System.out.println("Cost to pay customer 2 : " + costToPayCustomer2);
-
-        double costToPayCustomer3 = calculateTaxiCost(23);
-        System.out.println("Cost to pay customer 3 : " + costToPayCustomer3);
-
-        //System.out.println(calculateTaxiCost(10)); //shorter way to print result no need for variables definition.
-
-    }
+    /*
     public static double calculateTaxiCost(double min) {
         double initialCost = 2.5;
         double costPerMinute = 1.15;

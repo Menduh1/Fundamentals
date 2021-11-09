@@ -16,19 +16,19 @@ public class Main {
 
 
 //        Part B
-        List<String> guests = getGuestNames();
-
+        List<String> guests = getGuestNames(); // #1
+// List<String> guests = new ArrayList<>("Guest 1", "Guest 2" ...)
         // Part A - Greeting !!!
         // greetGuests(guests);
 //        Part C
         int numberOfVIPTickets = 10;
-        for (int i = 0; i < numberOfVIPTickets; i++) {
+        for (int i = 0; i < numberOfVIPTickets; i++) {//#3
             String vipGuest = guests.get(i);
-            giveVIPTicket(vipGuest);
+            giveVIPTicket(vipGuest);//#4
         }
 
 //        Part D
-        sayGoodbye(guests);
+        sayGoodbye(guests);//#6
     }
 
     public static void sayGoodbye(List<String> guests) {
@@ -38,7 +38,7 @@ public class Main {
     }
 
     //        Available Functions
-    public static List<String> getGuestNames() {
+    public static List<String> getGuestNames() { //#2
         List<String> guests = new ArrayList<>();
         for (int i = 1; i < 11; i++) {
             guests.add("Guest" + i); // i -> by each iteration add 1 -> i = i + 1 -> i = 0 +1 ; i = 1 + 1 = 2; ...until <11 (10)
@@ -46,7 +46,7 @@ public class Main {
         return guests;
     }
 
-    public static void giveVIPTicket(String guest) {
+    public static void giveVIPTicket(String guest) {//#5
         System.out.println(guest + " received a VIP ticket.");
     }
 }

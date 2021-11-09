@@ -6,10 +6,10 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         //    Part B
-        List<String> ingredientsOfMostFamousCake = getIngredientsOfMostFamousCake();
-
+        List<String> ingredientsOfMostFamousCake = getIngredientsOfMostFamousCake(); // list with Strings : [Custard,..]
+        // List<String> ingredientsOfMostFamousCake = List.of{"Custard", ...}
         //    Part C
-        String answer = lookForIngredient(ingredientsOfMostFamousCake);
+        String answer = lookForIngredient(ingredientsOfMostFamousCake); // return String !!
         System.out.println(answer);
     }
 
@@ -26,38 +26,9 @@ public class Main {
         }
     }
 
-
     //    Available Functions
     public static List<String> getIngredientsOfMostFamousCake() {
         return List.of("Custard", "Chocolate", "Strawberries", "Cream");
     }
 }
-
-//  List<String> ingredientsOfMostFamousCake = new ArrayList<>(getIngredientsOfMostFamousCake());
-// loop!
-// while (true) {/*  Scanner scanner = new Scanner(System.in);
-//            System.out.println("Do you wand to exit ?");
-//
-//           boolean exit = scanner.nextBoolean();
-//            if (exit) {
-//                break;*/
-      /*  if (lookForIngredient(ingredientsOfMostFamousCake)) {
-            System.out.println("That ingredient is indeed included in the cake.");
-        } //else if (!lookForIngredient(ingredientsOfMostFamousCake))// {
-        else {
-            System.out.println("That ingredient is not included in the cake.");
-        }
-    }
-
-    public static boolean lookForIngredient(List<String> ingredientsOfMostFamousCake) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("What particular ingredient are you looking for?");
-        String listIngredients = scanner.nextLine();
-        return ingredientsOfMostFamousCake.contains(listIngredients);
-    }
-
-    public static List<String> getIngredientsOfMostFamousCake() {
-        return List.of("Custard", "Chocolate", "Strawberries", "Cream");
-    }
-}*/
 

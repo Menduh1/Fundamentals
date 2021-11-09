@@ -14,6 +14,7 @@ public class Main {
         System.out.println("And the next number is... " + ball + "!");
     }
 
+
     public static List<Integer> getBingoNumbersShuffled() {
         // Creates a list from 1 to 75 and shuffles it
         List<Integer> numbers = Stream.iterate(1, n -> n + 1)
@@ -23,21 +24,5 @@ public class Main {
         return numbers;
     }
     }
-        /*
-        List<Integer> getBingoBalls = (getBingoNumbersShuffled());
-        int firstNumber = getBingoBalls.get(0);
-        getBingoBalls.remove(0);
-        System.out.println("And the next number is... " + firstNumber + "!");
-    }
-    public static List<Integer> getBingoNumbersShuffled() {
-        // Creates a list from 1 to 75 and shuffles it
-        List<Integer> numbers = Stream.iterate(1, n -> n + 1)
-                .limit(75)
-                .collect(Collectors.toList());
-        Collections.shuffle(numbers);
-        System.out.println(numbers);
-        numbers.remove(numbers);
-        return numbers;
-    }
-}*/
+
 

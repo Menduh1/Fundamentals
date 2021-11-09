@@ -13,42 +13,19 @@ public class Main {
         scanner.nextLine();
         System.out.println("Which brand is it?");
         String brand = scanner.nextLine();
-
-        if (shouldBuyPhone(price, brand)) {
-            System.out.println("I will buy this one, thanks!");
-        } else {
-            System.out.println("Can you show me another one?");
-        }
-}
-        //    Part A
-        public static boolean shouldBuyPhone ( int price, String brand){
-            int minimumPrice = 150;
-            int maximumPrice = 600;
-            List<String> brands = List.of("cLular", "Hawaii", "SunSong");
-            boolean isPriceInRange = price >= minimumPrice && price <= maximumPrice;
-            return isPriceInRange && brands.contains(brand);
-        }
-    }
-        /*
-
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("How expensive is this cell phone?");
-        int price = scanner.nextInt();
-        scanner.nextLine();
-        System.out.println("Which brand is it?");
-        String brand = scanner.nextLine();
-
-        boolean isShouldBuyPhone = shouldBuyPhone(price, brand);
-
-        if (isShouldBuyPhone) {
+        if (shouldBuyPhone(price, brand)) { // function returns true/false
             System.out.println("I will buy this one, thanks!");
         } else {
             System.out.println("Can you show me another one?");
         }
     }
-
+    //    Part A
     public static boolean shouldBuyPhone(int price, String brand) {
+        int minimumPrice = 150;
+        int maximumPrice = 600;
         List<String> brands = List.of("cLular", "Hawaii", "SunSong");
-        return (price >= 150 && price <= 600 && (brands.contains(brand)));
+        boolean isPriceInRange = price >= minimumPrice && price <= maximumPrice;
+        return isPriceInRange && brands.contains(brand);
+        // return (price >= 150 && price <= 600 && (brands.contains(brand)));
     }
-}*/
+}

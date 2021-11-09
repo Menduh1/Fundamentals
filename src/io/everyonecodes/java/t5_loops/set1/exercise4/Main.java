@@ -13,6 +13,17 @@ public class Main {
         System.out.println("That will be " + total + " € please!");
     }
 }
+
+/*
+        int sum = 0;
+        int i = 0;
+        while (i < names.size()){
+            sum += names.get(i).length();
+            i++;
+        }
+        System.out.println(sum);
+*/
+
         /*
         for (int i = 0; i < names.size(); i++) {
             PriceTotal += names.get(i).length();

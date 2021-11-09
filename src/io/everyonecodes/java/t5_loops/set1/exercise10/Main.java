@@ -6,21 +6,21 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
 
-        List<String> words = getSomeWords();
-        List<String> nicknames = new ArrayList<>();
+        List<String> words = getSomeWords();//#1
+        List<String> nicknames = new ArrayList<>();//#3
 
 //    Part C
-        for (String word : words) {
-            int endOfNickname = word.length() / 2;
-            endOfNickname = (int) Math.floor(endOfNickname);
-            String nickname = word.substring(0, endOfNickname);
-            nicknames.add(nickname);
+        for (String word : words) {//#4
+            int endOfNickname = word.length() / 2;//#5 - value
+            endOfNickname = (int) Math.floor(endOfNickname); // value
+            String nickname = word.substring(0, endOfNickname);// String
+            nicknames.add(nickname);// #6 - add String
             System.out.println(nicknames);
         }
 
     }
 
-    public static List<String> getSomeWords() {
+    public static List<String> getSomeWords() {//#2
         return List.of("gallery", "conviction", "performance", "diameter", "conservative", "constellation", "communication", "incentive");
     }
 }

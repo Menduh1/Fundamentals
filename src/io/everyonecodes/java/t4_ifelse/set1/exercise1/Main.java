@@ -13,7 +13,7 @@ public class Main {
 
         System.out.println("What is your favourite color?");
         String color = scanner.nextLine();
-        if (color.equals("blue")) {
+        if (color.equals("blue")) { // compare String mit predefmethod equals
             System.out.println(commentExalted);
         } else {
             System.out.println(commentModerate);
@@ -22,7 +22,7 @@ public class Main {
 //        Part B
         System.out.println("Would you paint the living room walls in blue sky color?");
         boolean wouldChooseBlueSky = scanner.nextBoolean();
-        if (wouldChooseBlueSky) {
+        if (wouldChooseBlueSky) { // true boolean as condition
             System.out.println(commentExalted);
         } else {
             System.out.println(commentModerate);
@@ -36,10 +36,10 @@ public class Main {
         System.out.println("How much would you spend to decorate a studio?");
         int budget = scanner.nextInt();
         if (budget < limitLower) {
-            System.out.println(commentDisappointed);
+            System.out.println(commentDisappointed); // assigned commits reused several times !!
         }
         if (budget >= limitLower && budget <= limitUpper) {
-            System.out.println(commentModerate);
+            System.out.println(commentModerate); // limits set 5000 - 15000
         }
         if (budget > limitUpper) {
             System.out.println(commentExalted);
@@ -57,70 +57,4 @@ public class Main {
         }
     }
 }
-    /*
-    public static String isFavoriteColor() {
-        // -- Part A
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Your favorite colour is blue?");
-        Boolean bleuTrue = scanner.nextBoolean();
-        //String favoriteColor = scanner.nextLine();
-        String blueTrue = " I think just the same !";
-        if (bleuTrue) {
-            return blueTrue;
-            //System.out.println("I think just the same!");
-        } if(!blueTrue){
-            //System.out.println("That’s quite interesting.");
-            return "That's quite interesting.";
-        }
-       // return "its interesting";
-    }*/
-/*
-    public static void main(String[] args) {
-
-        // System.out.println( isFavoriteColor());
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Your favorite colour is blue?");
-        String favoriteColor = scanner.nextLine();
-
-        if (favoriteColor.equals("blue")) {
-            System.out.println("I think just the same!");
-        } else {
-            System.out.println("That’s quite interesting.");
-        }
-//--Part B
-
-        System.out.println("Would you choose to paint the living room walls in blue sky color - yes/no?");
-        String roomColor = scanner.nextLine();
-        if (roomColor.equals("yes")) {
-
-            System.out.println("I think just the same!");
-        } else {
-            System.out.println("That’s quite interesting.");
-        }
-
-// -- Part C
-        System.out.println("How big of a budget would you spend to decorate a studio ?");
-        int spent = scanner.nextInt();
-
-        if (spent > 15000) {
-
-            System.out.println("I think just the same!");
-        } else if (spent < 5000) {
-            System.out.println("Oh, I didn’t expect something like that...");
-        } else {
-            System.out.println("That’s quite interesting.");
-
-        }
-// -- Part D
-        System.out.println("How many days would you need to decorate that studio?");
-        int day = scanner.nextInt();
-        if (day < 7) {
-            System.out.println("I think just the same!");
-        } else {
-            System.out.println("That’s quite interesting.");
-        }
-
-    }
-
-}*/
 

@@ -6,22 +6,22 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
 //    Part B
-        List<String> fileNames = getAllPhotoFileNames();
+        List<String> fileNames = getAllPhotoFileNames();//#2
 //    Part C
-        for (String fileName : fileNames) {
-            String newName = generateNewName(fileName);
-            renameFile(fileName, newName);
+        for (String fileName : fileNames) {//#3
+            String newName = generateNewName(fileName);//#5 return String
+            renameFile(fileName, newName);//#7 output String
         }
     }
 //    Part A
-    public static String generateNewName(String oldName) {
+    public static String generateNewName(String oldName) {//#4
         int nameLength = oldName.length();
         String nameWithoutEnding = oldName.substring(0, nameLength - 4);
         return nameWithoutEnding + ".png";
     }
 
     //    Available Functions
-    public static List<String> getAllPhotoFileNames() {
+    public static List<String> getAllPhotoFileNames() { // #1
         List<String> photoLists = new ArrayList<>();
         for (int i = 1; i < 11; i++) {
             photoLists.add("photo" + i + ".jpg");
@@ -29,7 +29,7 @@ public class Main {
         return photoLists;
     }
 
-    public static void renameFile(String oldName, String newName) {
+    public static void renameFile(String oldName, String newName) {//#6
 //        Dummy renaming function. Usually to rename you will need a function from the java.io.File class.
         System.out.println("File " + oldName + " has been renamed to " + newName);
     }

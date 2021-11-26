@@ -3,37 +3,8 @@ package io.everyonecodes.java.t8_evaluation.exercise2;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Main {
-    public static void main(String[] args) {
-
-        List<String> words = new ArrayList<>(List.of("as", "word", "example", "", "this is a sentence.", "another sentence.", "Donaudampfschiffahrtskapitän"));
-        for (String word : words) {
-            List<String> splitInHalfAndCap = (splitInHalfAndCapitalize(word));
-            System.out.println(splitInHalfAndCap);
-        }
-
-        //System.out.println(splitInHalfAndCap);
-    }
-
-    public static List<String> splitInHalfAndCapitalize(String word) {
-        List<String> strings = new ArrayList<>();
-        if (word.length() > 0) {
-            if (word.length() % 2 == 0) {
-                String halfFirst = String.valueOf(word.charAt(0)).toUpperCase() + word.substring(1, (word.length() / 2));
-                strings.add(halfFirst);
-                String halfSecond = String.valueOf(word.toUpperCase().charAt(word.length() / 2) + word.substring((word.length() / 2)));
-                strings.add(halfSecond);
-            } else {
-                String halfFirst = String.valueOf(word.charAt(0)).toUpperCase() + word.substring(1, word.length() - (int) (Math.ceil(word.length() / 2)));
-                strings.add(halfFirst);
-                String halfSecond = String.valueOf(word.toUpperCase().charAt((int) (Math.ceil(word.length() / 2)) + 1)) + word.substring((int) (Math.ceil(word.length() / 2) + 2));
-                strings.add(halfSecond);
-            }
-        }
-        return strings;
-    }
-}
-/*  public static List<String> splitInHalfAndCapitalize(String text) {
+public class MainB {
+    public static List<String> splitInHalfAndCapitalize(String text) {
         List<String> list = new ArrayList<>();
         if (text.length() > 0) {
             int halfIndex = (int) Math.ceil((double) text.length() / 2);
@@ -72,10 +43,11 @@ public class Main {
         for (int i = 0; i < list.size(); i++) {
             String element = list.get(i);
             System.out.print("\"" + element + "\"");
-            if (i < list.size() -1) {
+            if (i < list.size() - 1) {
                 System.out.print(", ");
             }
         }
         System.out.print("]");
         System.out.println("");
-    }*/
+    }
+}
